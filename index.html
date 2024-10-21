@@ -1,9 +1,164 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/Homepage.CSS">
+</head>
 <body>
-  <h1>Daniella Alfred</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <!--The website's header starts here-->
+    <header>
+        <div class="logo-and-navbar" id="logo-and-navbar">
+            <img src="/Images/BidBook Logo Icon.png" alt="BidBook Logo Icon">
+            <p>BidBook</p>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Shop</li>
+                    <li>FAQ</li>
+                </ul>
+            </nav>
+        </div>
 
+        <div class="user-interaction" id="user-interaction">
+            <p>Login</p>
+            <img src="/Images/Favorite List Icon.png" alt="favorite list icon">
+            <p class="cart-item-count" id="cart-item-count">0</p>
+        </div>
+    </header>
+
+    <!--The website's main content starts here-->
+    <main>
+        <section class="welcome-banner" id="welcome-banner">
+            <img src="/Images/Books and Magazines 2.jpg" alt="welcome-image">
+            <article>
+                <h1>Books Have Never <br> Been More Affordable</h1>
+                <h3>Get all your favorite books at a price that suits your budget</h3>
+                <button>Shop Now</button>
+            </article>
+        </section>
+
+        <section class="best-seller" id="best-seller">
+            <div class="section-heading" id="section-heading">
+                <h2>Our Best Sellers</h2>
+                <button>View More</button>
+            </div>
+            <div class="best-seller-items" id="best-seller-items">
+                <div class="best-seller-item-1">
+                    <img src="/Images/BidBook E-book Covers/Business Plan.png" alt="Business Plan E-book Cover">
+                    <p class="best-seller-item-name">Business Plan</p>
+                    <p class="best-seller-item-price">$27.00</p>
+                </div>
+                
+                <div>
+                    <img src="/Images/BidBook E-book Covers/Digital Market Agency.png" alt="Market Agency E-book Cover">
+                    <p class="best-seller-item-name">Market Agency</p>
+                    <p class="best-seller-item-price">$118.00</p>
+                </div>
+
+                <div>
+                    <img src="/Images/BidBook E-book Covers/Property.png" alt="Property E-book Cover">
+                    <p class="best-seller-item-name">Property</p>
+                    <p class="best-seller-item-price">$19.00</p>
+                </div>
+
+                <div>
+                    <img src="/Images/BidBook E-book Covers/The Ultimate Marketing.png" alt="The Ultimate Marketing E-book Cover">
+                    <p class="best-seller-item-name"> The Ultimate Marketing</p>
+                    <p class="best-seller-item-price">$198.00</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="new-arrivals" id="new-arrivals">
+            <img src="/Images/summer book 3.png" alt="new-arrivals-banner-image">
+            <article>
+                <h2>Discover the latest treasures <br> in our exciting collection.</h2>
+                <h4>Where every bid is a chance, and every second counts!</h4>
+                <button>Shop Now</button>
+            </article>
+        </section>
+
+        <section class="shop-by-categories" id="shop-by-categories">
+            <div class="section-heading" id="section-heading">
+                <h2>Shop by Category</h2>
+                <button>Shop Now</button>
+            </div>
+            <div class="category-items" id="category-items">
+                <div class="category-container">
+                    <div class="category" id="motivation">
+                        <img src="/Images/Cooking books.png" alt="Reaching your Dreams E-book Cover">
+                        <button>Motivation</button>
+                    </div>    
+                </div>
+
+                <div class="category-container">
+                    <div class="category" id="finance">
+                        <img src="/Images/Mystrey Books.png" alt="Strategies for Finacial Success E-book Cover">
+                        <button>Finance</button>
+                    </div>
+                </div>
+
+                <div class="category-container">
+                    <div class="category" id="business">
+                        <img src="/Images/Fantasy Books.png" alt="The Business Empire E-book Cover">
+                        <button>Business</button>
+                    </div>
+                
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-section" id="about-section">
+            <article>
+                <h3>Our Inspiration</h3>
+                <p>At the heart of our Dutch e-auction platform for books lies a passion for literature 
+                    and a commitment to making rare and valuable books accessible to all. 
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!--The website's footer starts here-->
+    <footer>
+        <div class="footer-shop" id="footer-shop">
+            <h5>Shop</h5>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Shop</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div class="footer-policy" id="footer-policy">
+            <h5>Policy</h5>
+            <ul>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Refund Policy</li>
+                <li>Shipping Policy</li>
+            </ul>
+        </div>
+        <div class="footer-contact" id="footer-contact">
+            <h5>Contact</h5>
+            <p>500 terry francine street <br>
+                san francisco, ca 94158 <br>
+                info@mysite.com <br>
+                123-456-789
+            </p>
+        </div>
+        <div class="subscribe-form" id="subscribe-form">
+            <h5>subscribe to our newsletter</h5>
+            <p>be the first to know about our hottest discounts</p>
+            <form action="null">
+                <label for="email">Email</label>
+                <input type="email" id="subscriber-form-email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+</body>
 </html>
