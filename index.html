@@ -24,7 +24,7 @@
 
         <div class="user-interaction" id="user-interaction">
             <p>Login</p>
-            <img src="/Images/Favorite List Icon.png" alt="favorite list icon">
+            <img src="/Images/Favourite List Icon.png" alt="favorite list icon">
             <p class="cart-item-count" id="cart-item-count">0</p>
         </div>
     </header>
@@ -49,25 +49,41 @@
                 <div class="best-seller-item-1">
                     <img src="/Images/BidBook E-book Covers/Business Plan.png" alt="Business Plan E-book Cover">
                     <p class="best-seller-item-name">Business Plan</p>
-                    <p class="best-seller-item-price">$27.00</p>
+                    <div class="bsp">
+                        <p class="best-seller-item-old-price">$270.00</p>
+                        <p class="best-seller-item-current-price">$200.00</p>
+                    </div>    
+                    <p>Sales end in 4 days</p>
                 </div>
                 
                 <div>
                     <img src="/Images/BidBook E-book Covers/Digital Market Agency.png" alt="Market Agency E-book Cover">
                     <p class="best-seller-item-name">Market Agency</p>
-                    <p class="best-seller-item-price">$118.00</p>
+                    <div class="bsp">
+                        <p class="best-seller-item-old-price">$118.00</p>
+                        <p class="best-seller-item-current-price">$110.00</p>
+                    </div>    
+                    <p>Sales end in 7 days</p>
                 </div>
 
                 <div>
                     <img src="/Images/BidBook E-book Covers/Property.png" alt="Property E-book Cover">
                     <p class="best-seller-item-name">Property</p>
-                    <p class="best-seller-item-price">$19.00</p>
+                    <div class="bsp">
+                        <p class="best-seller-item-old-price">$35.00</p>
+                        <p class="best-seller-item-current-price">$19.00</p>
+                    </div>    
+                    <p>Sales end in 01:00:00</p>
                 </div>
 
                 <div>
                     <img src="/Images/BidBook E-book Covers/The Ultimate Marketing.png" alt="The Ultimate Marketing E-book Cover">
                     <p class="best-seller-item-name"> The Ultimate Marketing</p>
-                    <p class="best-seller-item-price">$198.00</p>
+                    <div class="bsp">
+                        <p class="best-seller-item-old-price">$198.00</p>
+                        <p class="best-seller-item-current-price">$150.00</p>
+                    </div>    
+                    <p>Sales end in 15 days</p>
                 </div>
             </div>
         </section>
@@ -113,52 +129,77 @@
         </section>
 
         <section class="about-section" id="about-section">
+            <img id="flower-frame-1" src="/Images/Flower Frame.png" alt="A Woman reading">
             <article>
                 <h3>Our Inspiration</h3>
-                <p>At the heart of our Dutch e-auction platform for books lies a passion for literature 
+                <p>At the heart of our Dutch e-auction platform for books lies a passion for literature
                     and a commitment to making rare and valuable books accessible to all. 
                 </p>
             </article>
+            <img id="flower-frame-2" src="/Images/Flower Frame 2.png" alt="A Woman reading">
         </section>
+
+        <section class="social-links">
+            <img src="/Images/instagram icon.png" alt="instagram Icon">
+            <p id="social-links-title">Follow Us on instagram</p>
+            <p id="ig-handle">@BidBookStores</p>
+        </section>
+
     </main>
 
     <!--The website's footer starts here-->
     <footer>
-        <div class="footer-shop" id="footer-shop">
-            <h5>Shop</h5>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Shop</li>
-                <li>FAQ</li>
-            </ul>
+        <div class="first-section">
+            <div class="footer-menu">
+                <div class="footer-shop" id="footer-shop">
+                    <h5>Shop</h5>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Shop</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="footer-policy" id="footer-policy">
+                    <h5>Policy</h5>
+                    <ul>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Refund Policy</li>
+                        <li>Shipping Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-contact" id="footer-contact">
+                    <h5>Contact</h5>
+                    <p>500 terry francine street <br>
+                        san francisco, ca 94158 <br>
+                        info@mysite.com <br>
+                        123-456-789
+                    </p>
+                </div>
+            </div>
+                
+            <div class="subscribe-form" id="subscribe-form">
+                <h5>Subscribe to our newsletter</h5>
+                <p>be the first to know about our hottest discounts</p>
+                <form action="null">
+                    <label for="email">Email *</label>
+                    <input type="email" placeholder="Enter your email" id="subscriber-form-email" name="email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
-        <div class="footer-policy" id="footer-policy">
-            <h5>Policy</h5>
-            <ul>
-                <li>Terms & Conditions</li>
-                <li>Privacy Policy</li>
-                <li>Refund Policy</li>
-                <li>Shipping Policy</li>
-            </ul>
+        
+        <div class="second-section">
+            <div id="footer-logo">
+                <img src="/Images/BidBook White Logo Icon.png" alt="BidBook Logo">
+                <p>BidBook</p>
+            </div>
+            <div id="project-owner">
+                <p>© Proudly Designed by Plusone Network Ltd.</p>
+            </div>
         </div>
-        <div class="footer-contact" id="footer-contact">
-            <h5>Contact</h5>
-            <p>500 terry francine street <br>
-                san francisco, ca 94158 <br>
-                info@mysite.com <br>
-                123-456-789
-            </p>
-        </div>
-        <div class="subscribe-form" id="subscribe-form">
-            <h5>subscribe to our newsletter</h5>
-            <p>be the first to know about our hottest discounts</p>
-            <form action="null">
-                <label for="email">Email</label>
-                <input type="email" id="subscriber-form-email" name="email" required>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+
     </footer>
 </body>
 </html>
